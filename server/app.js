@@ -6,7 +6,7 @@ const path = require("path");
 
 const session = require("express-session");
 const FileStore = require("session-file-store")(session);
-const authenticationRouter = require("./src/routers/authentication");
+const authenticationRouter = require("./routes/authentication");
 
 const app = express();
 const { PORT, SECRET } = process.env;

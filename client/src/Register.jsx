@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { register } from "../../redux/reducers/userReducer/actions";
+import { register } from "./redux/reducers/userReducer/actions";
 
 export default function Register() {
   const navigate = useNavigate();

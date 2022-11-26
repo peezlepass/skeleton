@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { logout } from "../../redux/reducers/userReducer/actions";
+import { logout } from "./redux/reducers/userReducer/actions";
 
 export default function Layout({ children }) {
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ export default function Layout({ children }) {
     navigate("/");
   };
   return (
-    <>
+    <main className="bg-felt-pattern min-h-screen">
       <header>
         <nav className="flex gap-x-4">
           {user ? (
@@ -39,6 +39,6 @@ export default function Layout({ children }) {
         </nav>
       </header>
       <div>{children}</div>
-    </>
+    </main>
   );
 }

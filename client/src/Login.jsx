@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { login } from "../../redux/reducers/userReducer/actions";
+import { login } from "./redux/reducers/userReducer/actions";
 
 export default function Login() {
   const navigate = useNavigate();
