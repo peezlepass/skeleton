@@ -10,11 +10,11 @@ const FileStore = require("session-file-store")(session);
 const authenticationRouter = require("./routes/authentication");
 
 const app = express();
-const { PORT, SECRET } = process.env;
+const { PORT, SESSION_SECRET } = process.env;
 const sessionConfig = {
   name: "skeleton",
   store: new FileStore(),
-  secret: SECRET,
+  secret: SESSION_SECRET,
   resave: false,
   saveUninitialized: false,
   cookie: {
