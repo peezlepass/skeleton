@@ -3,7 +3,7 @@ import * as types from "./types";
 //Read the user from local storage when creating the initial state
 //If the client thinks the user is logged in, their data will be available
 //in localStorage
-const localStorageKey = "elbrusGames.user";
+const localStorageKey = "skeleton.user";
 const localUser = localStorage.getItem(localStorageKey);
 const initialState = {
   user: localUser ? JSON.parse(localUser) : null,
